@@ -12,9 +12,9 @@ namespace OOPCollection2
     {
         static void Main(string[] args)
         {
-            karyawantetap[] karyawantetap = new karyawantetap[20];
-            karyawanharian[] karyawanharian = new karyawanharian[20];
-            sales[] sales = new sales[20];
+            karyawantetap[] karyawantetap = new karyawantetap[30];
+            karyawanharian[] karyawanharian = new karyawanharian[30];
+            sales[] sales = new sales[30];
 
             List<karyawan> listkaryawan = new List<karyawan>();
 
@@ -23,7 +23,7 @@ namespace OOPCollection2
             do
             {
             awal:
-                Console.WriteLine("PILIH MENU APLIKASI DATA KARYAWAN\n");
+                Console.WriteLine("PILIHLAH MENU APLIKASI DATA KARYAWAN\n");
                 Console.WriteLine("\n1. Tambah Data Karyawan");
                 Console.WriteLine("2. Hapus Data Karyawan");
                 Console.WriteLine("3. Tampilkan Data Karyawan");
@@ -117,14 +117,14 @@ namespace OOPCollection2
 
                     case 2:
                         Console.Clear();
-                        Console.WriteLine("Hapus Karyawan\n");
+                        Console.WriteLine("Menghapus Karyawan\n");
                         Console.Write("Masukkan Nik Karyawan yang ingin di hapus : ");
                         string hapus = Console.ReadLine();
 
                         if (listkaryawan.Any(n => n.nik == hapus))
                         {
                             listkaryawan.RemoveAll(x => x.nik == hapus);
-                            Console.WriteLine("Data karyawan berhasil dihapus!\n");
+                            Console.WriteLine("Data karyawan telah berhasil dihapus!\n");
                         }
                         else
                         {
@@ -148,13 +148,13 @@ namespace OOPCollection2
                         break;
 
                     case 4:
-                        Console.WriteLine("SEMOGA KITA BERTEMU DI LAIN HARI :)");
-                        Thread.Sleep(2000);
+                        Console.WriteLine("SAMPAI BERTEMU DI LAIN HARI LAGI:)");
+                        Thread.Sleep(2500);
                         Environment.Exit(0);
                         break;
 
                     default:
-                        Console.WriteLine("Tidak ada pilihan dalam menu!");
+                        Console.WriteLine("Tidak ada pilihan di dalam menu!");
                         break;
                 }
 
