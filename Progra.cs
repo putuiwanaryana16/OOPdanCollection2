@@ -12,9 +12,9 @@ namespace OOPCollection2
     {
         static void Main(string[] args)
         {
-            karyawantetap[] karyawantetap = new karyawantetap[30];
-            karyawanharian[] karyawanharian = new karyawanharian[30];
-            sales[] sales = new sales[30];
+            karyawantetap[] karyawantetap = new karyawantetap[20];
+            karyawanharian[] karyawanharian = new karyawanharian[20];
+            sales[] sales = new sales[20];
 
             List<karyawan> listkaryawan = new List<karyawan>();
 
@@ -149,7 +149,7 @@ namespace OOPCollection2
 
                     case 4:
                         Console.WriteLine("SAMPAI BERTEMU DI LAIN HARI LAGI:)");
-                        Thread.Sleep(2500);
+                        Thread.Sleep(2000);
                         Environment.Exit(0);
                         break;
 
